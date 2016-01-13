@@ -7,6 +7,15 @@ class Rover
   end
 
   def move
+    if direction == "N"
+      ycoordinate += 1
+    elsif direction == "E"
+      xcoordinate += 1
+    elsif
+      direction == "S"
+      ycoordinate -= 1
+    elsif direction == "W"
+      xcoordinate -= 1
   end
 
   def turn(turn_instruction)
@@ -33,7 +42,6 @@ class Rover
     elsif
       direction == "W" && turn_instruction == "R"
       direction == "N"
-    else
     end
   end
 
