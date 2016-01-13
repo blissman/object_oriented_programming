@@ -31,3 +31,10 @@ Chris.greet
 Cristina = Student.new
 Cristina.name = "Cristina"
 Cristina.greet
+
+Chris.teach
+Cristina.learn
+
+Cristina.teach
+
+#Christina can't teach because she isn't able to see the teach method in the Instructor class.
