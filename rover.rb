@@ -88,28 +88,28 @@ Rover2 = Rover.new
 Rover2.name = "Rover2"
 
 puts "Please enter the plateau size (x,y):"
-plateau_size = "5 5"
-# plateau_size = gets.chomp
+# plateau_size = "5 5"
+plateau_size = gets.chomp
 plateau_size = plateau_size.split("")
 
 puts "Please enter Rover1's start position:"
-start_position1 = "1 2 N"
-# start_position1 = gets.chomp
+# start_position1 = "1 2 N"
+start_position1 = gets.chomp
 start_position1 = start_position1.split("")
 
 puts "Please enter Rover1's movement instructions (rover will stop at boundaries of plateau):"
-move_1 = "LMLMLMLMM"
-# move_1 = gets.chomp
+# move_1 = "LMLMLMLMM"
+move_1 = gets.chomp
 move_1 = move_1.split("")
 
 puts "Please enter Rover2's start position:"
-start_position2 = "3 3 E"
-# start_position2 = gets.chomp
+# start_position2 = "3 3 E"
+start_position2 = gets.chomp
 start_position2 = start_position2.split("")
 
 puts "Please enter Rover2's movement instructions (rover will stop at boundaries of plateau):"
-move_2 = "MMRMMRMRRM"
-# move_2 = gets.chomp
+# move_2 = "MMRMMRMRRM"
+move_2 = gets.chomp
 move_2 = move_2.split("")
 
 Rover1.read_instruction(plateau_size, start_position1, move_1)
