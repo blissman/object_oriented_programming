@@ -24,17 +24,17 @@ class Instructor < Person
 
 end
 
-Chris = Instructor.new
-Chris.name = "Chris"
-Chris.greet
+chris = Instructor.new
+chris.name = "Chris"
+chris.greet
 
-Cristina = Student.new
-Cristina.name = "Cristina"
-Cristina.greet
+cristina = Student.new
+cristina.name = "Cristina"
+cristina.greet
 
-Chris.teach
-Cristina.learn
+chris.teach
+cristina.learn
 
-Cristina.teach
+cristina.teach
 
 #Christina can't teach because she isn't able to see the teach method in the Instructor class.
