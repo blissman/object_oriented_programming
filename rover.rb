@@ -2,6 +2,10 @@ def convert_to_array(str)
   str = str.split(" ")
 end
 
+def movement_to_array(str)
+  str = str.split("")
+end
+
 class Rover
   attr_accessor :xcoordinate
   attr_accessor :ycoordinate
@@ -67,3 +71,7 @@ y_max = plateau_size[1]
 puts "Please enter Rover1's start position (x=#{x_min} to #{x_max}, y=#{y_min} to #{y_max}, start direction = N/E/S/W):"
 start_position1 = gets.chomp
 convert_to_array(start_position1)
+
+puts "Please enter Rover1's movement instructions (rover will stop at boundaries of plateau):"
+move_1 = gets.chomp
+movement_to_array(move_1)
