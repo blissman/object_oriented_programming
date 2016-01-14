@@ -43,13 +43,13 @@ class Rover
         @direction == "W" && instruction == "R"
         @direction = "N"
 
-      elsif instruction == "M" && @direction == "N"
+      elsif instruction == "M" && @direction == "N" && @ycoordinate < y_max
         @ycoordinate += 1
-      elsif instruction == "M" && @direction == "E"
+      elsif instruction == "M" && @direction == "E" && @xcoordinate < x_max
         @xcoordinate += 1
-      elsif instruction == "M" && @direction == "S"
+      elsif instruction == "M" && @direction == "S" && @ycoordinate > y_min
         @ycoordinate -= 1
-      elsif instruction == "M" && @direction == "W"
+      elsif instruction == "M" && @direction == "W" && @xcoordinate > x_min
         @xcoordinate -= 1
       else
         puts "Not a valid instruction!"
